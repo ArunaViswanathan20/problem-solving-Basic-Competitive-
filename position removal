@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdbool.h>
+#include<string.h>
+using namespace std;
+
+bool remove_char(char *str, int pos);
+
+int main()
+{
+    char str[20];
+    int pos;
+    cout << "give the string" << endl;
+    cin>>str;
+    cout<<"position to remove"<<endl;
+    cin>>pos;
+    int len=strlen(str);
+    if(pos>len)
+    {
+    	cout<<"invalid opertaion";
+	}
+	else
+	{
+		for(int i=pos;i<=len;i++)
+		{
+			str[i]=str[i+1];
+		}
+		cout<<str;
+	}
+}
