@@ -1,0 +1,17 @@
+//iteration
+#include <stdlib.h>
+
+int main()
+{
+    int n,d,a=0,sum;
+    printf("enter number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        sum=d+sum;
+        n=n/10;
+    }
+ printf("sum:%d",sum);
+    return 0;
+}
