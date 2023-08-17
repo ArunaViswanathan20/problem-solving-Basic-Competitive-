@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+int Gcd(int x, int y)
+{
+    if(x==0)
+        return y;
+    return Gcd(y%x,x);
+}
+int Lcm(int m,int n)
+{
+    return (m*n)/Gcd(m,n);
+}
+
+int main()
+{
+    
+    int a,b;
+    cin>>a;
+    cin>>b;
+    int gcd=Gcd(a,b);
+    int lcm=Lcm(a,b);
+    cout<<"LCM of "<<a<<" and "<<b<<" is "<<lcm<<endl;
+    cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
+    return 0;
+}
