@@ -1,0 +1,29 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+    int num,result=0,rem,m,n;
+    cout<<"enter digit"<<endl;
+    cin>>m;
+    cout << "Enter a number :" << endl;
+    cin>>n;
+    num=n;
+    while(num!=0)
+    {
+    	rem=num%10;
+    	result=result+(pow(rem,m));
+    	num=num/10;
+	}
+    
+    if (n==result)
+    {
+        cout<<"its an armstrong number";
+
+    }
+    else{
+        cout<<"its not an armstrong number";
+    }
+    return 0;
+}
