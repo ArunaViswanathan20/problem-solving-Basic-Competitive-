@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char ch;
+    cin>>ch;
+    int check = 0;
+    switch (ch)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+        check = 1;
+    }
+   if(check==1)
+    cout<<"vowel";
+   else
+    cout<<"cons";
+    return 0;
+}
