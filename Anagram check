@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+bool anagram(char *str1,char *str2)
+{
+    int count1[256]={0};
+
+    int i;
+    for( i=0;str1[i]&&str2[i];i++)
+    {
+        count1[str1[i]]++;
+        count1[str2[i]]--;
+    }
+    if(str1[i]!=str2[i])
+        return false;
+    for(i=0;i<=256;i++)
+    {
+        if(count1[i])
+            return false;
+    }
+    return true;
+
+}
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    char str1[200],str2[200];
+    gets(str1);
+    gets(str2);
+    if(anagram(str1,str2))
+        cout<<"anagram";
+    else
+        cout<<"not an anagram";
+    return 0;
+}
