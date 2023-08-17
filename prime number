@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,i,prime=1;
+    cout<<"enter number:"<<endl;
+    cin>>num;
+    for(i=2;i<num;i++)
+    {
+    	if(num%i!=0)
+    	{
+    		prime=0;
+    		cout<<"prime number";
+    		break;
+		}
+	}
+   
+    if(prime!=0)
+     cout<<"not prime number";
+    return 0;
+}
