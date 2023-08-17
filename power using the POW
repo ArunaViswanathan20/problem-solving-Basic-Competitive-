@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,val;
+    cout<<"enter num"<<endl;
+    cin>>a;
+    cout << "power value" << endl;
+    cin>>b;
+    val=pow(a,b);
+    cout << " value"<<val;
+
+    return 0;
+}
