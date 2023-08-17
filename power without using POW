@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c=1,i;
+    cout<<"enter num"<<endl;
+    cin>>a;
+    cout << "power value" << endl;
+    cin>>b;
+    for(i=1;i<=b;i++)
+    {
+        c=c*a;
+    }
+    cout<<c;
+    return 0;
+}
