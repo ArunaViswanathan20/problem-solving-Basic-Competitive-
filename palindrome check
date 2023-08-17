@@ -1,0 +1,25 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+   
+    char arr[256];
+    gets(arr);
+    int h=strlen(arr)-1;
+    l=0;
+    while(h>l)
+    {
+        if(h--!=l++)
+        {
+            cout<<"non palin";
+            return 0;
+        }
+
+    }
+
+    cout<<"palin";
+
+    return 0;
+}
