@@ -1,0 +1,17 @@
+#include<iostream.h>
+using namespace std;
+longfactorial (long x)
+{
+    if(x==1)
+        return 1;
+    else
+    return x*factorial(x-1 );
+}
+int main()
+{
+    long num,fact;
+    cin>>num;
+    fact=factorial(num);
+    cout << fact << endl;
+    return 0;
+}
