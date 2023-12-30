@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    int n,tot=0;
+    cin>>n;
+    while(n!=0)
+    {
+        tot=tot+(n%10);
+        n=n/10;
+    }
+    cout<<tot;
+    return 0;
+}
